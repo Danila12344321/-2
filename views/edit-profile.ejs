@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+    <link rel="stylesheet" href="/css/edit-profile-style.css">
+</head>
+<body>
+    <main>
+        <div class="edit-container">
+            <h1>Редактировать профиль</h1>
+            <form action="" method="post" class="forms-container" enctype="multipart/form-data">
+                <div>
+                    <label for="">Логин</label>
+                    <input type="text" readonly value="<%=username%>">
+                    <label for="">Имя</label>
+                    <input type="text" name="fullname" value="<%=userdata.fullname%>">
+                    <label for="">Почта</label>
+                    <input type="text" readonly value="<%=email%>">
+                    <label for="">Биография</label>
+                    <textarea id="" cols="30" rows="10" name="bio"><%=userdata.bio%></textarea>
+                    <label for="">Фотография</label>
+                    <input type="file" class="custom-file-input" name="image">
+                 </div>
+
+                <div>
+                    <label for="">Ссылка на веб-сайт</label>
+                    <input type="text" name="weblink"  value="<%=userdata.weblink%>">
+                    <label for="">Фейсбук </label>
+                    <input type="text" name="fb"  value="<%=userdata.facebook%>">
+                    <label for="">Инстаграм</label>
+                    <input type="text" name="insta" value="<%=userdata.instagram%>">
+                    <label for="">Твиттер</label>
+                    <input type="text" name="tw" value="<%=userdata.twitter%>">
+                    <label for="">Ватсап</label>
+                    <input type="text" name="wa" value="<%=userdata.whatsapp%>">
+                    <label for="">Номер телефона</label>
+                    <input type="text" name="phno" value="<%=userdata.phoneno%>">
+                    <div class="buttons">
+                        <input type="reset" value="Discard">
+                        <input type="submit" value="save">
+                    </div>
+                </div>
+        </form>
+        </div>
+    </main>
+    
+</body>
+</html>
